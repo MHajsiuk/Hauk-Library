@@ -1,0 +1,221 @@
+Function desription template
+
+			/*-------------------------------------------------------------------------------------------------------------------
+			Function template
+
+				Description:
+					
+				Arguments:
+					
+				Returns:
+					
+			--------------------------------------------------------------------------------------------------------------------*/
+
+
+			Window Styles
+
+			#define WS_OVERLAPPED       0x00000000L
+#define WS_POPUP            0x80000000L 
+#define WS_CHILD            0x40000000L
+#define WS_MINIMIZE         0x20000000L
+#define WS_VISIBLE          0x10000000L
+#define WS_DISABLED         0x08000000L
+#define WS_CLIPSIBLINGS     0x04000000L
+#define WS_CLIPCHILDREN     0x02000000L
+#define WS_MAXIMIZE         0x01000000L
+#define WS_CAPTION          0x00C00000L     /* WS_BORDER | WS_DLGFRAME  */
+#define WS_BORDER           0x00800000L
+#define WS_DLGFRAME         0x00400000L
+#define WS_VSCROLL          0x00200000L
+#define WS_HSCROLL          0x00100000L
+#define WS_SYSMENU	        0x00080000L
+#define WS_THICKFRAME       0x00040000L
+#define WS_MINIMIZEBOX      0x00020000L
+#define WS_MAXIMIZEBOX      0x00010000L
+
+
+
+Some test code I was using.
+if (gcount == 1)
+			{
+				dwStyle = 0x00000000L;    // WS_OVERLAPPED    
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+				
+			}
+
+			if (gcount == 2)
+			{
+				dwStyle = 0x80000000L;	  // WS_POPUP         
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 3)
+			{
+				dwStyle = 0x40000000L;	  // WS_CHILD         
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 4)
+			{
+				dwStyle = 0x20000000L;	  // WS_MINIMIZE      
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 5)
+			{
+				dwStyle = 0x10000000L;	  // WS_VISIBLE       
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 6)
+			{
+				dwStyle = 0x08000000L;	  // WS_DISABLED      
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 7)
+			{
+				dwStyle = 0x04000000L;	  // WS_CLIPSIBLINGS  
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 8)
+			{
+				dwStyle = 0x02000000L;	  // WS_CLIPCHILDREN  
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 9)
+			{
+				dwStyle = 0x01000000L;	  // WS_MAXIMIZE      
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 10)
+			{
+				dwStyle = 0x00C00000L;    // WS_CAPTION       
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 11)
+			{
+				dwStyle = 0x00800000L;	  // WS_BORDER        
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 12)
+			{
+				dwStyle = 0x00400000L;	  // WS_DLGFRAME      
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 13)
+			{
+				dwStyle = 0x00200000L;	  // WS_VSCROLL       
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 14)
+			{
+				dwStyle = 0x00100000L;	  // WS_HSCROLL       
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 15)
+			{
+				dwStyle = 0x00080000L;	  // WS_SYSMENU       
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 16)
+			{
+				dwStyle = 0x00040000L;	  // WS_THICKFRAME    
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 17)
+			{
+				dwStyle = 0x00020000L;	  // WS_MINIMIZEBOX   
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			if (gcount == 18)
+			{
+				dwStyle = 0x00010000L;	  // WS_MAXIMIZEBOX   
+				bResult = wc.SetWindowStyle(dwStyle);
+				ShowWindow(hWindowHandle, SW_SHOW);
+				UpdateWindow(hWindowHandle);
+
+				bResult = wc.GetWindowStyle(&dwStyle);
+			}
+
+			++gcount;
+
